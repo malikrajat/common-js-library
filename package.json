@@ -1,0 +1,24 @@
+{
+  "name": "common-js-library",
+  "version": "1.0.0",
+  "description": "Creating a universal JavaScript library that performs well across frameworks requires a mix of best practices, modern tools, and attention to detail. This article will guide you through the process step-by-step, ensuring the result is professional, scalable, and performance-focused. We will use TypeScript and Rollup to achieve this.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.30.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3"
+  }
+}
